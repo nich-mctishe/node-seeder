@@ -4,6 +4,6 @@
 
 mkdir -p ../../seeder ../../seeder/models
 
-cp -Rn updates/ ../../seeder/updates
-cp -Rn data/ ../../seeder/data
+cp -Rn updates/ ../../seeder/updates/
+cp -Rn data/ ../../seeder/data/
 cp -n template.js ../../seeder
