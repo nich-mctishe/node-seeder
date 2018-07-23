@@ -1,0 +1,22 @@
+{
+  "name": "node-seeder",
+  "version": "1.0.0",
+  "description": "Seeder plugin for express based frameworks",
+  "author": "Nich Headlong <nichheadlong@googlemail.com>",
+  "devDependencies": {
+    "standard": "11.0.1"
+  },
+  "dependencies": {
+    "debug": "2.6.0",
+    "lodash": "4.17.4",
+    "slugify": "1.3.0",
+    "js-yaml": "3.8.1",
+    "xml-parser": "1.2.1",
+    "csvjson": "5.0.0",
+    "async": "2.6.1"
+  },
+  "scripts": {
+    "postinstall": "./tools/install",
+    "lint": "node_modules/.bin/standard"
+  }
+}
