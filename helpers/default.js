@@ -96,6 +96,13 @@ helper.prototype.model = {
    * @returns {Function}
    */
   insert: (model, search, data, callback) => {
+    if (!model) {
+      return console.error('model not defined');
+    }
+    if (!model.findOrCreate) {
+      return console.error('this seeder requires mongoose-find-or-create or equivilent set as a plugin in order to use the findOrCreate functionality')
+    }
+
     model.findOrCreate(search, data,
       (err, res) => {
         if (err) {

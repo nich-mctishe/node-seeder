@@ -1,8 +1,23 @@
 {
   "name": "node-seeder",
-  "version": "1.0.0",
+  "version": "1.0.3",
+  "license": "ISC",
   "description": "Seeder plugin for express based frameworks",
   "author": "Nich Headlong <nichheadlong@googlemail.com>",
+  "bugs": {
+    "url": "https://github.com/nich-mctishe/node-seeder/issues"
+  },
+  "homepage": "https://github.com/nich-mctishe/node-seeder#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nich-mctishe/node-seeder.git"
+  },
+  "keywords": [
+    "mongo",
+    "mongoose",
+    "mongoose-find-or-create",
+    "express"
+  ],
   "devDependencies": {
     "standard": "11.0.1"
   },
@@ -15,6 +30,7 @@
     "comma-separated-values": "3.6.4",
     "async": "2.6.1"
   },
+  "main": "index.js",
   "scripts": {
     "postinstall": "./tools/install",
     "lint": "node_modules/.bin/standard"
