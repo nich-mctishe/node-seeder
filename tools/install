@@ -1,7 +1,6 @@
 #!/bin/bash
 
 # determine how and where to install new files in the main folder structure.
-
 mkdir -p ../../seeder ../../seeder/models
 mkdir -p ../../seeder/updates ../../seeder/data
 
