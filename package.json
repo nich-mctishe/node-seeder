@@ -32,7 +32,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "postinstall": "./tools/install",
+    "postinstall": "./tools/install && node tools/postinstall",
     "lint": "node_modules/.bin/standard"
   }
 }
