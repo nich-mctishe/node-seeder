@@ -15,6 +15,8 @@ Small lightweight seeder for express based apps, that can seed from JSON, XML, C
 
 Node
 Express
+Mongoose
+Mongoose find-or-create
 
 ## Installation
 
@@ -43,7 +45,7 @@ In order to be able to test the basic seed you will need to pass in the above mo
 }
 ```
 
-Normally, it is best to run the seeder as the server is initiated, as it will scan the database for implementations and seed any template that isn't already present. a sample setup (in express) may be as follows
+Normally, it's best to run the seeder when the server is initiated, as it will scan the database for implementations and seed any template that isn't already present each time the server is reloaded. a sample setup (in express) may be as follows
 
 ```
 const express = require('express')
@@ -68,7 +70,7 @@ mongoose
 })
 ```
 
-the seeder will stat the seeder/updates folder and determine what template files are in it. It will then cycle through each one. It will search the database of ran upload record, upload to db, if required, and then save the record to an updates collection in the db.
+the seeder will stat the seeder/updates folder and determine what template files are in it. Then it will cycle through each one. It will search the database of ran upload records, upload the file to db, if required, and then save the record to the updates collection in the db.
 
 ## Templates
 
@@ -105,4 +107,4 @@ once a template file has been made, a data file with all the date to be seeded c
 
 node-seeder will recognise 4 different data formats: yml, json, csv, xml. and will priorise them in that order (ie: if you have a yml and json data file of the same name, it will choose the yml file to seed).
 
-in order to make a data file, create a new file in seeder/data to your preferred format and name it the same as the template js file. for example, the file users-2018-01-01.js may have a csv file with the name users-2018-01-01.csv 
+in order to make a data file, create a new file in seeder/data to your preferred format and name it the same as the template js file. for example, the file users-2018-01-01.js may have a csv file with the name users-2018-01-01.csv

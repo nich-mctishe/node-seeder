@@ -22,6 +22,17 @@ const classCase = (string) => {
   return ucfirst(_.camelCase(string))
 }
 
+/**
+ * Is Title
+ * check whether the word starts with a cap
+ * @param {String} word
+ *
+ * @returns {Bool}
+ */
+const isTitle = (word) => {
+  return /^[A-Z]/.test(word)
+}
+
 // maybe change this to class based interation
 function helper () {}
 
@@ -37,7 +48,8 @@ helper.prototype.logging = {
 
 helper.prototype.string = {
   ucfirst: ucfirst,
-  classCase: classCase
+  classCase: classCase,
+  isTitle: isTitle
 }
 
 helper.prototype.format = {
